@@ -1,6 +1,6 @@
 import fs from 'fs';
 import * as os from 'os';
-import * as open from 'open';
+import open, { apps } from 'open';
 import { createServer } from './createServer.js';
 import { certKeyPath, certPath, port } from './env.js';
 
@@ -11,5 +11,5 @@ const option = {
 createServer(option)
     .listen(port, () => {
         console.log(`server start https://${os.hostname()}:${port}/`);
-        open.default(`https://${os.hostname()}:${port}/pc`);
+        open(`https://${os.hostname()}:${port}/pc`, { app: { name: apps.chrome } });
     });
