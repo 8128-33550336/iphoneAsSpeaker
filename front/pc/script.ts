@@ -1,5 +1,5 @@
 import * as qrcode from "qrcode";
-import { iceServers } from "../iceServers";
+import { iceServers } from "../iceServers.js";
 
 window.addEventListener('load', () => {
     const ws = new WebSocket(`wss://${location.host}`);

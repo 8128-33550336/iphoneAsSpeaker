@@ -1,4 +1,4 @@
-import { iceServers } from "../iceServers";
+import { iceServers } from "../iceServers.js";
 
 window.addEventListener('load', () => {
     console.log('load');
