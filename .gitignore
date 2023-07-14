@@ -1,0 +1,5 @@
+dist
+certs/*
+!certs/.gitkeep
+node_modules
+public/**/*.js
