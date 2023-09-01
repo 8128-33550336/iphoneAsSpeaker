@@ -1,5 +1,9 @@
-# electron化しようとしたが
+# スマートフォンをスピーカーにします。
+
+electron化を検討しましたが、
 
 https://www.electronjs.org/ja/docs/latest/api/desktop-capturer#caveats
 
-のため意味がなかった
+のためmacではオーディオをキャプチャできません。
+
+そのため、各自でBlackholeなどをインストールしてください。
